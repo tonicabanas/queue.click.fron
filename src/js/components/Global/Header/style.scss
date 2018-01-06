@@ -1,0 +1,13 @@
+@import '../../../../sass/theme/colors.scss';
+@import '../../../../sass/theme/mixins.scss';
+
+header {
+  height: get-rem(55px);
+  background: $queue-white;
+  .Header__logo {
+    @include vertical-center;
+    width: get-rem(140px);
+    height: get-rem(34px);
+    margin-bottom: get-rem(15px);
+  }
+}

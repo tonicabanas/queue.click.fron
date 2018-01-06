@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import Routes from 'config/routes';
 
-import Menu from 'components/Global/Menu';
+
+import Header from 'components/Global/Header/Header';
 
 export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Menu />
-
-        <div className='Page'>
-          <Routes />
-        </div>
+        <Header />
       </div>
     );
   }
