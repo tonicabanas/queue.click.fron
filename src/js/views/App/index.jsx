@@ -14,8 +14,8 @@ export default class App extends Component {
         <Header/>
         <Clock/>
         <div className="Events">
-          <Event username="acabanas" description="Tomar un cafecito que será un día duro"/>
-          <Event username="dseijo" description="Qué son los services?"/>
+          <Event username="acabanas" description="Tomar un cafecito que será un día duro" time="10"/>
+          <Event username="dseijo" description="Qué son los services?" time="30"/>
         </div>
       </div>
     );

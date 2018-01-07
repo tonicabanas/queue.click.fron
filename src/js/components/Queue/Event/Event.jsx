@@ -8,6 +8,7 @@ export default class Event extends Component {
       <div className='Event'>
         <h1 className='Event__user'>{this.props.username}</h1>
         <div className='Event__description'>{this.props.description}</div>
+        <div className='Event__time'>{this.props.time}<span className='Event__min'> min</span></div>
       </div>
     );
   }

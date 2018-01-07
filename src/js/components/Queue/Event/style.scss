@@ -27,4 +27,15 @@ $path-avatar: $path + 'assets/img/avatar.png';
     color: $queue-grey;
     text-align: center;
   }
+
+  .Event__time {
+    padding-right: get-rem(10px);
+    padding-bottom: get-rem(3px);
+    font-size: get-rem(20px);
+    color: $queue-grey;
+    text-align: right;
+  }
+  .Event__min{
+    font-size: get-rem(12px);
+  }
 }
