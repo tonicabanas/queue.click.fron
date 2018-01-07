@@ -5,7 +5,7 @@ $path: '../../../../';
 $logoPath: '#{$path}/assets/img/logo';
 
 html {
-  font-size: get-desktop-vh(10px);
+  font-size: get-desktop-vw(10px);
   background: $queue-blue;
 }
 

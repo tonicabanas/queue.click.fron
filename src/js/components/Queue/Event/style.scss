@@ -1,0 +1,30 @@
+@import '../../../../sass/theme/colors.scss';
+@import '../../../../sass/theme/mixins.scss';
+@import '../../../../sass/theme/globals.scss';
+
+$path: '../../../../';
+$path-avatar: $path + 'assets/img/avatar.png';
+
+.Event {
+  margin-top: get-rem(33px);
+  width: get-rem(600px);
+  min-height: get-rem(108px);
+  background: $queue-white;
+  border-radius: get-rem(10px);
+
+  .Event__user {
+    margin: 0;
+    padding-top: get-rem(15px);
+    padding-bottom: get-rem(15px);
+    font-size: get-rem(36px);
+    color: $queue-blue;
+    text-transform: lowercase;
+    font-weight: normal;
+    text-align: center;
+  }
+  .Event__description {
+    font-size: get-rem(14px);
+    color: $queue-grey;
+    text-align: center;
+  }
+}

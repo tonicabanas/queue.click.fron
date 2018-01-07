@@ -1,0 +1,9 @@
+@import '../../../sass/theme/colors.scss';
+@import '../../../sass/theme/mixins.scss';
+@import '../../../sass/theme/globals.scss';
+
+.Events {
+  width: 100%;
+  margin-left: get-rem(250px);
+  margin-top: get-rem(70px);
+}

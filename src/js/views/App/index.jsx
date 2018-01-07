@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 
 import Header from 'components/Global/Header/Header';
 import Clock from 'components/Global/Clock/Clock';
+import Event from 'components/Queue/Event/Event';
+
+import './style.scss';
 
 export default class App extends Component {
   render() {
@@ -10,6 +13,10 @@ export default class App extends Component {
       <div className='App'>
         <Header/>
         <Clock/>
+        <div className="Events">
+          <Event username="acabanas" description="Tomar un cafecito que será un día duro"/>
+          <Event username="dseijo" description="Qué son los services?"/>
+        </div>
       </div>
     );
   }
