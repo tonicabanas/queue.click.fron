@@ -1,0 +1,25 @@
+@import '../../../../sass/theme/colors.scss';
+@import '../../../../sass/theme/mixins.scss';
+@import '../../../../sass/theme/globals.scss';
+
+$path: '../../../../';
+$path-avatar: $path + 'assets/img/avatar.png';
+
+.Clock {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: Bold;
+  font-size: get-rem(36px);
+  position: fixed;
+  top: get-rem(7px);
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  margin-left: $margin-left;
+  &.green {
+    color: $queue-green;
+  }
+  &.white {
+    color: $queue-white;
+  }
+}
