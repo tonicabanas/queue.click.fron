@@ -2,14 +2,25 @@
 @import '../../../../sass/theme/mixins.scss';
 @import '../../../../sass/theme/globals.scss';
 
+$path: '../../../../';
+$path-avatar: $path + 'assets/img/avatar.png';
+
 header {
   height: get-rem(55px);
   background: $queue-white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: $margin-left;
+  padding-right: $margin-right;
   .Header__logo {
     width: get-rem(140px);
     height: get-rem(34px);
+  }
+  .Header__profile {
+    width: get-rem(40px);
+    height: get-rem(36px);
+    background: url($path-avatar);
+    background-size: cover;
   }
 }

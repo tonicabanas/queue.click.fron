@@ -8,8 +8,7 @@ export default class Header extends Component {
     return (
       <header className='Header'>
         <img className='Header__logo' src={logo} alt='logo'/>
-        <div className='timer big'>
-        </div>
+        <button className='Header__profile'/>
       </header>
     );
   }

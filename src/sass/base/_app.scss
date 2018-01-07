@@ -1,9 +1,19 @@
 @import '../../sass/theme/colors.scss';
 @import '../../sass/theme/mixins.scss';
+
 $path: '../../../../';
 $logoPath: '#{$path}/assets/img/logo';
 
 html {
   font-size: get-desktop-vh(10px);
   background: $queue-blue;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+
+}
+button:focus{
+  outline: 0;
 }
