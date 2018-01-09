@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import moment from 'moment';
 
 import './style.scss';
 
@@ -26,10 +27,14 @@ export default class Clock extends Component {
     });
   }
 
+  formatTime(){
+    return moment(this.state.date).format('HH:mm')
+  }
+
   render() {
     return (
       <div className='Clock green'>
-        <span>{this.state.date.toLocaleTimeString().substr(0, 5)}</span>
+        <span>{this.formatTime()}</span>
       </div>
     );
   }
