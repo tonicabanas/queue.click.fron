@@ -1,25 +1,64 @@
-@function get-desktop-vw($target) {
-  $design-width: 1024;
-  $vw-context: ($design-width * .01) * 1px;
-  @return ($target / $vw-context) * 1vw;
+@import '../base/breakpoints.scss';
+
+@media (min-width: 0) {
+  @function get-desktop-vw($target) {
+    $design-width: 1024;
+    $vw-context: ($design-width * .01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+  }
+  @function get-desktop-vh($target) {
+    $design-height: 768;
+    $vw-context: ($design-height * .01) * 1px;
+    @return ($target / $vw-context) * 1vh;
+  }
+
+  @function get-mobile-vw($target) {
+    $design-width: 1024;
+    $vw-context: ($design-width * .01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+  }
+
+  @function get-mobile-vh($target) {
+    $design-height: 1920;
+    $vw-context: ($design-height * .01) * 1px;
+    @return ($target / $vw-context) * 1vh;
+  }
+  html {
+    font-size: get-desktop-vw(10px);
+    background: $queue-blue;
+  }
+
 }
 
-@function get-desktop-vh($target) {
-  $design-height: 764;
-  $vw-context: ($design-height * .01) * 1px;
-  @return ($target / $vw-context) * 1vh;
-}
+@media (min-width: $breakpoint-lg) {
+  @function get-desktop-vw($target) {
+    $design-width: 1920;
+    $vw-context: ($design-width * .01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+  }
+  @function get-desktop-vh($target) {
+    $design-height: 768;
+    $vw-context: ($design-height * .01) * 1px;
+    @return ($target / $vw-context) * 1vh;
+  }
 
-@function get-mobile-vw($target) {
-  $design-width: 1024;
-  $vw-context: ($design-width * .01) * 1px;
-  @return ($target / $vw-context) * 1vw;
-}
+  @function get-mobile-vw($target) {
+    $design-width: 1024;
+    $vw-context: ($design-width * .01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+  }
 
-@function get-mobile-vh($target) {
-  $design-height: 1920;
-  $vw-context: ($design-height * .01) * 1px;
-  @return ($target / $vw-context) * 1vh;
+  @function get-mobile-vh($target) {
+    $design-height: 1920;
+    $vw-context: ($design-height * .01) * 1px;
+    @return ($target / $vw-context) * 1vh;
+  }
+
+  html {
+    font-size: get-desktop-vw(12px);
+    background: $queue-blue;
+  }
+
 }
 
 @function get-rem($target) {

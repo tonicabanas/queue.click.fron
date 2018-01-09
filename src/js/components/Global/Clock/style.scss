@@ -16,7 +16,6 @@ $path-avatar: $path + 'assets/img/avatar.png';
   z-index: $z-index-header;
 
   text-align: center;
-  margin-left: $margin-left;
   &.green {
     color: $queue-green;
   }
