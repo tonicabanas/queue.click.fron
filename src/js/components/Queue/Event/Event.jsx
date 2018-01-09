@@ -1,20 +1,16 @@
 import React, {Component} from 'react';
+import calculateHeight from '../utils.js';
 
 import './style.scss';
 
-const logFactor = 45.166626117938186;
 const pixelReference = 10;
-const minSize = 115;
 
 export default class Event extends Component {
   constructor(props) {
     super(props);
-    this.heightRems = (this.calculateHeight() / pixelReference).toString().concat('rem');
+    this.heightRems = (calculateHeight(this.props.time) / pixelReference).toString().concat('rem');
   }
 
-  calculateHeight() {
-    return Math.max(minSize, (Math.log2(this.props.time) * logFactor));
-  }
 
   render() {
     const styleHeight = {height: this.heightRems};
