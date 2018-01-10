@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   padding-left: $margin-left;
   padding-right: $margin-right;
+  box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.47);
   z-index: $z-index-header;
   .Header__logo {
     width: get-rem(140px);
