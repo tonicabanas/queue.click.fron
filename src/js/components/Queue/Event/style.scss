@@ -42,4 +42,53 @@
   .Event__min {
     font-size: get-rem(12px);
   }
+  .Event__close {
+    font-size: get-rem(12px);
+    visibility: hidden;
+    position: absolute;
+    top: get-rem(8px);
+    left: get-rem(10px);
+    color: $queue-grey;
+    cursor: pointer;
+  }
+  .Event__start {
+    visibility: hidden;
+    position: absolute;
+    font-size: get-rem(12px);
+    top: get-rem(8px);
+    right: get-rem(10px);
+    color: $queue-green;
+    cursor: pointer;
+  }
+
+}
+
+.Event:hover {
+  .Event__close {
+    visibility: visible;
+
+    opacity: 0.6;
+  }
+
+  .Event__close:hover {
+    opacity: 1.0;
+
+  }
+
+  .Event__start {
+
+    opacity: 0.6;
+
+    visibility: visible;
+
+    .start_txt {
+      font-size: get-rem(14px);
+    }
+  }
+
+  .Event__start:hover {
+    opacity: 1.0;
+
+  }
+
 }
