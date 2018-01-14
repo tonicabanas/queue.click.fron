@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 
+import Popup from 'react-popup';
 import Header from 'components/Global/Header/Header';
 import Clock from 'components/Global/Clock/Clock';
 import Event from 'components/Queue/Event/Event';
@@ -9,9 +10,12 @@ import Slot from 'components/Queue/Slot/Slot';
 import './style.scss';
 
 export default class App extends Component {
+
+
   render() {
     return (
       <div className='App'>
+        <Popup/>,
         <Header/>
         <Clock/>
         <div className="Events">
@@ -29,4 +33,5 @@ export default class App extends Component {
       </div>
     );
   }
+
 }

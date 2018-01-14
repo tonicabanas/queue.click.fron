@@ -60,7 +60,6 @@
     color: $queue-green;
     cursor: pointer;
   }
-
 }
 
 .Event:hover {
@@ -72,15 +71,11 @@
 
   .Event__close:hover {
     opacity: 1.0;
-
   }
 
   .Event__start {
-
     opacity: 0.6;
-
     visibility: visible;
-
     .start_txt {
       font-size: get-rem(14px);
     }
@@ -88,7 +83,5 @@
 
   .Event__start:hover {
     opacity: 1.0;
-
   }
-
 }

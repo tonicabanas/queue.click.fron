@@ -19,7 +19,7 @@ export default class Event extends Component {
       <div className='Event' style={styleHeight}>
         <i className="Event__close fa fa-times" aria-hidden="true"/>
         <span className='Event__start'>
-          <span className='start_txt'>start </span>
+          <span className='Event__start_txt'>start </span>
           <i className="fa fa-play" aria-hidden="true"/>
         </span>
         <h1 className='Event__user'>{this.props.username}</h1>
