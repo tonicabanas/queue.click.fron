@@ -1,16 +1,16 @@
 @import '../../sass/theme/colors.scss';
 @import '../../sass/theme/mixins.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:300,400,700');
 
 $path: '../../../../';
 $logoPath: '#{$path}/assets/img/logo';
-
-
 
 button {
   border: 0;
   cursor: pointer;
 
 }
-button:focus{
+
+button:focus {
   outline: 0;
 }

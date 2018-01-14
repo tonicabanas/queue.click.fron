@@ -6,8 +6,7 @@ $path: '../../../../';
 $path-avatar: $path + 'assets/img/avatar.png';
 
 .Clock {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: Bold;
+  font-family: 'Roboto', sans-serif;
   font-size: get-rem(36px);
   position: fixed;
   top: get-rem(7px);
